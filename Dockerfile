@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . ./
 
-RUN pip install -r requirements.txt
+RUN pip install mkdocs-material
 
 RUN python mkdocs.py
 
