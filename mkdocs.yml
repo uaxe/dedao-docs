@@ -65,8 +65,6 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
-  - redirects:
-      redirect_maps:
 
 nav:
    
