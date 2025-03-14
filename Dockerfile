@@ -8,8 +8,6 @@ COPY . ./
 
 RUN pip install mkdocs-material
 
-RUN python mkdocs.py
-
 RUN mkdocs build
 
 FROM python:3.11-slim  AS production
