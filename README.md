@@ -10,6 +10,13 @@
 
 ### 本地部署
 
+#### docker方式
+```shell
+docker run -d -p 8092:8092 --restart always  --name dedao-docs  zkep/dedao-docs
+```
+浏览器访问：<http://127.0.0.1:8092/>
+
+
 #### 源码方式
 ```shell
 git clone https://github.com/uaxe/dedao-docs.git  --depth 1
