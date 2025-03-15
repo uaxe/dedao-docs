@@ -1,0 +1,12640 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="得到听书文档">
+      
+      
+        <meta name="author" content="zkep">
+      
+      
+      
+        <link rel="prev" href="../../%E7%A4%BE%E4%BC%9A%E5%AD%A6/%E3%80%8A%E8%8B%B1%E9%9B%84%E5%8F%98%E6%A0%BC%E3%80%8B-%20%E5%88%98%E7%8E%84%E8%A7%A3%E8%AF%BB/">
+      
+      
+        <link rel="next" href="../%E3%80%8A%E6%97%B6%E9%97%B4%E5%9B%B0%E5%A2%83%E3%80%8B-%20%E6%9C%B1%E6%AD%A5%E5%86%B2%E8%A7%A3%E8%AF%BB/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+    
+    
+      
+        <title>《混合信号》 哈希解读 - 得到听书文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="得到听书文档" class="md-header__button md-logo" aria-label="得到听书文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19v-3h8v3zm-4.5-6L2.47 7h4.24l4.96 4.95c.58.59.58 1.55 0 2.12L6.74 19H2.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            得到听书文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              《混合信号》  哈希解读
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/uaxe/dedao-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    uaxe/dedao-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%90%8D%E5%AE%B6%E8%AE%B2%E4%B9%A6/%E3%80%8A%E4%B8%96%E7%95%8C%E4%B9%8B%E4%B8%AD%E3%80%8B-%20%E5%BC%A0%E7%AC%91%E5%AE%87%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  名家讲书
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%83%AD%E9%97%A8/%E3%80%8A%E6%8B%90%E7%82%B9%E3%80%8B-%20%E4%B8%87%E7%BB%B4%E9%92%A2%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  热门
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%B2%BE%E5%93%81%E5%90%AC%E4%B9%A6/%E5%AF%BC%E8%AF%BB%EF%BC%9A%E6%AC%A2%E8%BF%8E%E5%9B%B4%E8%A7%82%E8%8B%B1%E9%9B%84%E4%B8%8E%E4%BC%97%E7%A5%9E%E7%9A%84%E6%B7%B7%E6%88%98/" class="md-tabs__link">
+          
+  
+    
+  
+  精品听书
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E9%95%87%E9%A6%86%E4%B9%8B%E5%AE%9D/%E3%80%8A%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E8%AE%B2%E8%AF%9D%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%BA%E3%80%8B-%20%E5%88%98%E7%8E%84%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  镇馆之宝
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%AE%B6%E5%BA%AD%E8%82%B2%E5%84%BF/%E3%80%8A%E5%AF%8C%E6%9C%89%E7%9A%84%E4%B9%A0%E6%83%AF%E3%80%8B-%20%E7%9C%9F%E7%9C%9F%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  家庭育儿
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%BF%83%E7%90%86%E5%AD%A6/%E3%80%8A%E5%86%A5%E6%83%B3%E3%80%8B-%20%E9%99%88%E5%AD%90%E6%98%82%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  心理学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%95%86%E4%B8%9A/%E3%80%8A%E7%9C%9F%E9%9C%80%E6%B1%82%E3%80%8B-%20%E6%9D%8E%E6%96%B9%E5%9C%86%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  商业
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%8E%86%E5%8F%B2/%E3%80%8A%E6%9B%BE%E5%9B%BD%E8%97%A9%E7%9A%84%E6%AD%A3%E9%9D%A2%E4%B8%8E%E4%BE%A7%E9%9D%A2%E3%80%8B-%20%E7%A7%89%E7%81%AB%E6%B0%8F%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  历史
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%AE%A1%E7%90%86%E5%AD%A6/%E3%80%8A%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E3%80%8BPro%E7%89%88%20-%20%E5%BC%A0%E5%87%AF%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  管理学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%A4%BE%E4%BC%9A%E5%AD%A6/%E3%80%8A%E7%90%86%E8%A7%A3%E5%B7%A5%E4%BD%9C%E3%80%8B-%E6%9D%A8%E4%BB%A5%E8%B5%9B%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  社会学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  经济学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6/%E3%80%8A%E5%86%B0%E8%BD%AE%E5%86%89%E5%8D%87%E3%80%8B-%20%E6%B8%B8%E8%AF%86%E7%8C%B7%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  自然科学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%93%B2%E5%AD%A6/%E3%80%8A%E6%B8%B8%E4%B8%96%E4%B8%8E%E8%87%AA%E7%84%B6%E7%94%9F%E6%B4%BB%EF%BC%9A%E5%BA%84%E5%AD%90%E8%AF%84%E4%BC%A0%E3%80%8B-%20%E9%99%88%E5%AD%90%E6%98%82%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  哲学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E9%87%91%E8%9E%8D%E5%AD%A6/%E3%80%8A%E9%92%B1%EF%BC%9A7%E6%AD%A5%E5%88%9B%E9%80%A0%E7%BB%88%E8%BA%AB%E6%94%B6%E5%85%A5%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  金融学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95/%E3%80%8A%E5%BD%B1%E5%93%8D%E5%8A%9B%E3%80%8B2022%E7%89%88%20-%20%E5%90%AC%E4%B9%A6%E5%9B%A2%E9%98%9F%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  职业发展
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%B3%95%E5%BE%8B/%E3%80%8A%E5%88%A9%E7%BB%B4%E5%9D%A6%E3%80%8B-%20%E5%BC%A0%E7%AC%91%E5%AE%87%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  法律
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%96%87%E5%AD%A6/%E3%80%8A%E6%9A%97%E5%A4%84%E7%9A%84%E5%A5%B3%E5%84%BF%E3%80%8B-%20%E6%9D%A8%E4%BB%A5%E8%B5%9B%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  文学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E8%89%BA%E6%9C%AF/51.%20%E5%94%90%E5%85%8B%E6%89%AC%EF%BC%9A%E5%9B%AD%E6%9E%97%EF%BC%8C%E4%B8%AD%E5%9B%BD%E4%BA%BA%E7%9A%84%E8%AF%97%E6%84%8F%E6%A0%96%E5%B1%85/" class="md-tabs__link">
+          
+  
+    
+  
+  艺术
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E4%BA%92%E8%81%94%E7%BD%91/%E3%80%8AIDEO%EF%BC%8C%E8%AE%BE%E8%AE%A1%E6%94%B9%E5%8F%98%E4%B8%80%E5%88%87%E3%80%8B-%20%E5%90%AC%E4%B9%A6%E5%9B%A2%E9%98%9F%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  互联网
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%94%BF%E6%B2%BB%E5%AD%A6/%E3%80%8A%E6%94%BF%E6%B2%BB%E7%9A%84%E6%A6%82%E5%BF%B5%E3%80%8B%E4%B8%A8%E5%BC%A0%E7%AC%91%E5%AE%87%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  政治学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%A7%91%E6%8A%80/DeepSeek%E4%B9%8B%E5%90%8E%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A6%81%E4%BF%9D%E6%8A%A4%E4%BB%80%E4%B9%88%EF%BC%9F/" class="md-tabs__link">
+          
+  
+    
+  
+  科技
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E4%BA%BA%E7%B1%BB%E5%AD%A6/%E3%80%8A%E5%8D%B1%E9%99%A9%E5%85%B3%E7%B3%BB%E3%80%8B-%E8%8B%97%E7%82%9C%E5%B7%A5%E4%BD%9C%E5%AE%A4%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  人类学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E4%BC%A0%E6%92%AD%E5%AD%A6/%E3%80%8A%E5%BC%B1%E4%BC%A0%E6%92%AD%E3%80%8B-%20%E6%9D%8E%E5%8D%97%E5%8D%97%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  传播学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%81%A5%E5%BA%B7/%E3%80%8A%E7%99%8C%E7%97%87%E7%97%85%E4%BA%BA%E6%80%8E%E4%B9%88%E5%90%83%E3%80%8B-%20%E7%8E%8B%E5%85%B4%E8%A7%A3%E8%AF%BB/" class="md-tabs__link">
+          
+  
+    
+  
+  健康
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="得到听书文档" class="md-nav__button md-logo" aria-label="得到听书文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19v-3h8v3zm-4.5-6L2.47 7h4.24l4.96 4.95c.58.59.58 1.55 0 2.12L6.74 19H2.5z"/></svg>
+
+    </a>
+    得到听书文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/uaxe/dedao-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    uaxe/dedao-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%90%8D%E5%AE%B6%E8%AE%B2%E4%B9%A6/%E3%80%8A%E4%B8%96%E7%95%8C%E4%B9%8B%E4%B8%AD%E3%80%8B-%20%E5%BC%A0%E7%AC%91%E5%AE%87%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    名家讲书
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E7%83%AD%E9%97%A8/%E3%80%8A%E6%8B%90%E7%82%B9%E3%80%8B-%20%E4%B8%87%E7%BB%B4%E9%92%A2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    热门
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E7%B2%BE%E5%93%81%E5%90%AC%E4%B9%A6/%E5%AF%BC%E8%AF%BB%EF%BC%9A%E6%AC%A2%E8%BF%8E%E5%9B%B4%E8%A7%82%E8%8B%B1%E9%9B%84%E4%B8%8E%E4%BC%97%E7%A5%9E%E7%9A%84%E6%B7%B7%E6%88%98/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    精品听书
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E9%95%87%E9%A6%86%E4%B9%8B%E5%AE%9D/%E3%80%8A%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E8%AE%B2%E8%AF%9D%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%BA%E3%80%8B-%20%E5%88%98%E7%8E%84%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    镇馆之宝
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%AE%B6%E5%BA%AD%E8%82%B2%E5%84%BF/%E3%80%8A%E5%AF%8C%E6%9C%89%E7%9A%84%E4%B9%A0%E6%83%AF%E3%80%8B-%20%E7%9C%9F%E7%9C%9F%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    家庭育儿
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%BF%83%E7%90%86%E5%AD%A6/%E3%80%8A%E5%86%A5%E6%83%B3%E3%80%8B-%20%E9%99%88%E5%AD%90%E6%98%82%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    心理学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%95%86%E4%B8%9A/%E3%80%8A%E7%9C%9F%E9%9C%80%E6%B1%82%E3%80%8B-%20%E6%9D%8E%E6%96%B9%E5%9C%86%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    商业
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%8E%86%E5%8F%B2/%E3%80%8A%E6%9B%BE%E5%9B%BD%E8%97%A9%E7%9A%84%E6%AD%A3%E9%9D%A2%E4%B8%8E%E4%BE%A7%E9%9D%A2%E3%80%8B-%20%E7%A7%89%E7%81%AB%E6%B0%8F%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    历史
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E7%AE%A1%E7%90%86%E5%AD%A6/%E3%80%8A%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E3%80%8BPro%E7%89%88%20-%20%E5%BC%A0%E5%87%AF%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    管理学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E7%A4%BE%E4%BC%9A%E5%AD%A6/%E3%80%8A%E7%90%86%E8%A7%A3%E5%B7%A5%E4%BD%9C%E3%80%8B-%E6%9D%A8%E4%BB%A5%E8%B5%9B%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    社会学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    经济学
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            经济学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    《混合信号》  哈希解读
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    《混合信号》  哈希解读
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      《混合信号》| 哈希解读
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="《混合信号》| 哈希解读">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      划重点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%97%B6%E9%97%B4%E5%9B%B0%E5%A2%83%E3%80%8B-%20%E6%9C%B1%E6%AD%A5%E5%86%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《时间困境》  朱步冲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%92%B1%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A55%E3%80%8B-%20%E9%A6%99%E5%B8%85%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《钱从哪里来5》  香帅解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8F%98%E9%87%8F6%E3%80%8B-%20%E4%BD%95%E5%B8%86%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《变量6》  何帆解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%96%B0%E9%95%80%E9%87%91%E6%97%B6%E4%BB%A3%E3%80%8B-%20%E6%9C%B1%E6%AD%A5%E5%86%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《新镀金时代》  朱步冲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%A4%A7%E5%90%88%E6%B5%81%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《大合流》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%AB%98%E6%95%88%E7%9A%84%E6%97%A0%E6%95%88%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《高效的无效》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%AC%AC%E5%9B%9B%E4%BA%A7%E4%B8%9A%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《第四产业》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%BE%8E%E5%9B%BD%E5%A2%9E%E9%95%BF%E7%9A%84%E8%B5%B7%E8%90%BD%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《美国增长的起落》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%94%BF%E6%B2%BB%E5%8F%91%E5%B1%95%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%88%86%E6%9E%90%E3%80%8B-%20%E8%8B%97%E5%8D%9A%E7%89%B9%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《政治发展的经济分析》  苗博特解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%A7%A6%E5%8F%91%E9%9D%9E%E7%90%86%E6%80%A7%E6%B6%88%E8%B4%B9%E3%80%8B-%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《触发非理性消费》 钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8E%86%E5%8F%B2%E4%B8%8A%E7%9A%84%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%B2%BE%E7%A5%9E%E3%80%8B-%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《历史上的企业家精神》 钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%AB%98%E8%96%AA%E5%9F%8E%E5%B8%82%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《高薪城市》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%80%E5%88%87%E7%9A%86%E5%A5%91%E7%BA%A6%E3%80%8B-%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《一切皆契约》 钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%A9%AF%E6%9C%8D%E5%A4%AA%E9%98%B3%E3%80%8B-%20%E7%94%B0%E7%89%A7%E6%AD%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《驯服太阳》  田牧歌解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%B0%94%E5%80%99%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《气候经济与人类未来》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%BA%A4%E6%98%93%E7%9A%84%E4%B8%96%E7%95%8C%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《交易的世界》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%85%A8%E7%90%83%E2%80%9C%E7%8C%8E%E8%BA%AB%E2%80%9D%E3%80%8B-%20%E8%A3%B4%E9%B9%8F%E7%A8%8B%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《全球“猎身”》  裴鹏程解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%AD%94%E9%AC%BC%E7%BB%8F%E6%B5%8E%E5%AD%A64%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《魔鬼经济学4》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%AD%94%E9%AC%BC%E7%BB%8F%E6%B5%8E%E5%AD%A62%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《魔鬼经济学2》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%BB%E6%9D%83%E5%80%BA%E5%8A%A1%E7%AE%80%E5%8F%B2%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《主权债务简史》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%A4%BE%E4%BC%9A%E3%80%8B-%E8%A2%81%E6%B3%BD%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《不平等社会》 袁泽解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%B5%A2%E5%AE%B6%E7%9A%84%E8%AF%85%E5%92%92%E3%80%8B-%20%E5%A4%A7%E5%8D%AB%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《赢家的诅咒》  大卫解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%B8%82%E5%9C%BA%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B-%20%E6%9C%89%E5%AE%B9%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《市场的逻辑》  有容解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8A%A8%E7%89%A9%E7%B2%BE%E7%A5%9E%E3%80%8B-%20%E4%B8%80%E5%9D%9B%C2%B7%E7%B2%A5%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《动物精神》  一坛·粥解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%BB%A5%E7%BB%88%E4%B8%BA%E5%A7%8B%E7%9A%84%E4%BA%BA%E7%94%9F%E6%99%BA%E6%85%A7%E3%80%8B-%20%E6%9C%89%E5%AE%B9%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《以终为始的人生智慧》  有容解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%A4%E8%AF%BE%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《两课经济学》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%8E%B0%E4%BB%A3%E8%B4%A7%E5%B8%81%E7%90%86%E8%AE%BA%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《现代货币理论》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%BB%B7%E5%80%BC%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《价值》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%AD%A3%E4%B9%89%E7%9A%84%E6%88%90%E6%9C%AC%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《正义的成本》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A21%E4%B8%96%E7%BA%AA%E8%B4%A7%E5%B8%81%E6%94%BF%E7%AD%96%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《21世纪货币政策》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%BF%A1%E5%BF%83%E7%9A%84%E5%8D%9A%E5%BC%88%E3%80%8B-%20%E6%9C%89%E5%AE%B9%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《信心的博弈》  有容解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%81%B0%E7%8A%80%E7%89%9B2%E3%80%8B-%20%E8%91%A3%E9%B8%BF%E8%8B%B1%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《灰犀牛2》  董鸿英解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E6%84%8F%E4%B9%89%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《经济学的意义》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%81%93%E5%BE%B7%E6%83%85%E6%93%8D%E8%AE%BA%E3%80%8B-%20%E5%88%98%E7%8E%AE%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《道德情操论》  刘玮解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%A4%A7%E8%A1%B0%E9%80%80%E5%B9%B4%E4%BB%A3%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《大衰退年代》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%AD%E5%9B%BD%E6%B8%B8%E6%88%8F%E9%A3%8E%E4%BA%91%E3%80%8B-%20%E9%99%88%E7%AB%A0%E9%B1%BC%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《中国游戏风云》  陈章鱼解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%94%A8%E5%BE%97%E4%B8%8A%E7%9A%84%E8%B5%84%E6%9C%AC%E8%AE%BA%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《用得上的资本论》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%8B%E4%B8%80%E4%B8%AA%E4%B8%96%E7%95%8C%E5%B7%A5%E5%8E%82%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《下一个世界工厂》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%BE%AE%E8%A7%82%E5%8A%A8%E6%9C%BA%E4%B8%8E%E5%AE%8F%E8%A7%82%E8%A1%8C%E4%B8%BA%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《微观动机与宏观行为》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%80%E8%AF%BE%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E7%8E%8B%E6%B5%B7%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《一课经济学》  王海解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%87%91%E8%9E%8D%E7%9A%84%E6%9C%AC%E8%B4%A8%E3%80%8B-%20%E5%B0%8F%E4%BA%91%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《金融的本质》  小云解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%BE%B7%E5%9B%BD%E7%9A%84%E4%B8%83%E4%B8%AA%E7%A7%98%E5%AF%86%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《德国的七个秘密》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%9B%9B%E5%AD%A3%E9%85%92%E5%BA%97%E7%BB%8F%E8%90%A5%E5%93%B2%E5%AD%A6%E3%80%8B-%E6%9D%A8%E8%95%BE%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《四季酒店经营哲学》 杨蕾解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%85%AB%E3%80%87%E5%B9%B4%E4%BB%A3%E3%80%8B-%20%E8%B4%BE%E8%A1%8C%E5%AE%B6%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《八〇年代》  贾行家解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%88%9B%E9%80%A0%E6%80%A7%E7%A0%B4%E5%9D%8F%E7%9A%84%E5%8A%9B%E9%87%8F%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《创造性破坏的力量》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%99%AA%E9%9F%B3%E3%80%8B-%20%E9%9D%92%E5%B9%B4%E7%BB%B4%E4%B9%9F%E7%BA%B3%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《噪音》  青年维也纳解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8A%A8%E8%8D%A1%E7%9A%84%E4%B8%96%E7%95%8C%E3%80%8B-%20%E5%86%B0%E6%9F%A0%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《动荡的世界》  冰柠解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%EF%BC%9A%E5%B4%9B%E8%B5%B7%E5%9C%A8%E4%B8%96%E7%95%8C%E7%9A%84%E5%9C%B0%E5%B9%B3%E7%BA%BF%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《中国经济：崛起在世界的地平线》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%BF%98%E5%8E%9F%E7%9C%9F%E5%AE%9E%E7%9A%84%E7%BE%8E%E8%81%94%E5%82%A8%E3%80%8B-%20%E5%B0%8F%E4%BA%91%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《还原真实的美联储》  小云解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%94%B9%E9%9D%A9%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B-%20%E8%8B%97%E5%8D%9A%E7%89%B9%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《改革的逻辑》  苗博特解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%91%87%E6%BB%9A%E5%90%A7%EF%BC%8C%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E6%9D%A8%E8%95%BE%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《摇滚吧，经济学》  杨蕾解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%B6%B3%E7%90%83%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E8%83%A1%E6%B1%9F%E6%B3%A2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《足球经济学》  胡江波解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%94%B5%E5%8A%9B%E5%95%86%E4%BA%BA%E3%80%8B-%20%E6%9D%A8%E8%95%BE%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《电力商人》  杨蕾解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%B9%B8%E7%A6%8F%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《幸福的经济学》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%9B%B6%E8%BE%B9%E9%99%85%E6%88%90%E6%9C%AC%E7%A4%BE%E4%BC%9A%E3%80%8B-%20%E9%98%BF%E5%8D%A0%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《零边际成本社会》  阿占解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8F%99%E4%BA%8B%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《叙事经济学》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%96%9C%E6%9D%A0%E5%88%9B%E4%B8%9A%E5%AE%B6%E3%80%8B-%20%E5%90%AB%E6%9C%88%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《斜杠创业家》  含月解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%AE%BA%E5%86%B3%E5%AE%9A%E8%87%AA%E7%84%B6%E5%88%A9%E6%81%AF%E7%8E%87%E7%9A%84%E5%8E%9F%E5%9B%A0%E3%80%8B-%20%E6%96%BD%E5%B1%95%E5%B7%A5%E4%BD%9C%E5%AE%A4%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《论决定自然利息率的原因》  施展工作室解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%85%A8%E7%90%83%E5%8C%96%E4%B8%8E%E5%9B%BD%E5%AE%B6%E7%AB%9E%E4%BA%89%E3%80%8B-%20%E8%A3%B4%E9%B9%8F%E7%A8%8B%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《全球化与国家竞争》  裴鹏程解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%9C%89%E9%97%B2%E9%98%B6%E7%BA%A7%E8%AE%BA%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《有闲阶级论》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%96%B0%E7%BB%93%E6%9E%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《新结构经济学》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8D%A7%E5%BA%95%E7%BB%8F%E6%B5%8E%E5%AD%A61%EF%BC%9A%E5%83%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E9%82%A3%E6%A0%B7%E6%80%9D%E8%80%83%E3%80%8B-%20%E5%AD%9F%E4%BD%B3%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《卧底经济学1：像经济学家那样思考》  孟佳解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%87%91%E9%92%B1%E5%8D%9A%E5%BC%88%E3%80%8B-%20%E8%91%A3%E9%B8%BF%E8%8B%B1%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《金钱博弈》  董鸿英解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%B4%A7%E5%B8%81%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《货币从哪里来》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%9D%83%E5%8A%9B%E4%B9%8B%E5%B7%85%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《权力之巅》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%AE%A1%E7%90%86%E5%9B%B0%E5%A2%83%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《管理困境》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%A4%A7%E8%90%A7%E6%9D%A1%E6%97%B6%E6%9C%9F%E7%9A%84%E4%B8%AD%E5%9B%BD%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《大萧条时期的中国》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%97%B6%E8%BF%90%E5%8F%98%E8%BF%81%E3%80%8B-%20%E5%88%98%E6%80%A1%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《时运变迁》  刘怡解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%B2%BE%E7%A5%9E%E3%80%8B-%20%E8%A3%B4%E9%B9%8F%E7%A8%8B%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《重新理解企业家精神》  裴鹏程解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%BE%8E%E4%B8%BD%E5%BF%83%E7%81%B5%E3%80%8B-%20%E6%9B%B9%E5%A4%A9%E5%85%83%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《美丽心灵》  曹天元解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%A8%B1%E4%B9%90%E5%8C%96%E6%80%9D%E7%BB%B4%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《娱乐化思维》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%BD%8E%E9%A3%8E%E9%99%A9%EF%BC%8C%E9%AB%98%E5%9B%9E%E6%8A%A5%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《低风险，高回报》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E4%BD%93%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《数字孪生体》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%80%9A%E5%BE%80%E8%A1%B0%E8%B4%A5%E4%B9%8B%E8%B7%AF%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《通往衰败之路》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%B5%84%E6%9C%AC%E7%9A%84%E8%A7%84%E5%88%99%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《资本的规则》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%A5%BD%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《好的经济学》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%94%9C%E7%94%9C%E5%9C%88%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《甜甜圈经济学》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%AC%91%E5%9C%A8%E7%94%9F%E9%95%BF%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《笑在生长》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%87%AA%E7%94%B1%E9%80%89%E6%8B%A9%E3%80%8B-%20%E6%B1%AA%E6%81%92%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《自由选择》  汪恒解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8D%A7%E5%BA%95%E7%BB%8F%E6%B5%8E%E5%AD%A64%EF%BC%9A%E4%B8%96%E7%95%8C%E7%BB%8F%E6%B5%8E%E8%BF%90%E8%A1%8C%E7%9A%84%E7%9C%9F%E7%9B%B8%E3%80%8B-%20%E5%AD%9F%E4%BD%B3%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《卧底经济学4：世界经济运行的真相》  孟佳解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%BD%93%E7%81%AF%E5%85%89%E6%9A%97%E6%B7%A1%E4%B9%8B%E5%90%8E%E3%80%8B-%20%E6%9C%89%E5%AE%B9%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《当灯光暗淡之后》  有容解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%A5%BD%E5%AE%9E%E7%94%A8%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《经济学好实用》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%A4%BE%E4%BC%9A%E4%B8%8E%E7%BB%8F%E6%B5%8E%E3%80%8B-%20%E5%86%AF%E5%90%AF%E5%A8%9C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《社会与经济》  冯启娜解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8D%A7%E5%BA%95%E7%BB%8F%E6%B5%8E%E5%AD%A62%EF%BC%9A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E4%B8%96%E7%95%8C%E3%80%8B-%20%E5%AD%9F%E4%BD%B3%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《卧底经济学2：经济学家如何看待世界》  孟佳解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%B9%81%E8%8D%A3%E7%9A%84%E6%82%96%E8%AE%BA%E3%80%8B-%20%E5%B9%BF%E8%A1%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《繁荣的悖论》  广行解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%95%9C%E5%8E%85%E3%80%8B-%20%E4%BC%9F%E8%90%8D%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《镜厅》  伟萍解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%A2%AB%E6%8E%A9%E7%9B%96%E7%9A%84%E7%BB%8F%E6%B5%8E%E7%9C%9F%E7%9B%B8%E3%80%8B-%20%E6%9D%8E%E7%82%9C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《被掩盖的经济真相》  李炜解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8D%A7%E5%BA%95%E7%BB%8F%E6%B5%8E%E5%AD%A63%EF%BC%9A%E9%9D%9E%E7%90%86%E6%80%A7%E4%B8%96%E7%95%8C%E7%9A%84%E7%90%86%E6%80%A7%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B-%20%E5%AD%9F%E4%BD%B3%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《卧底经济学3：非理性世界的理性经济学》  孟佳解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%96%AD%E5%B1%82%E7%BA%BF%E3%80%8B-%20%E7%A7%89%E7%81%AB%E6%B0%8F%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《断层线》  秉火氏解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%8E%AF%E4%BF%9D%E7%9A%84%E6%9A%B4%E5%8A%9B%E3%80%8B-%20%E6%9F%B4%E7%9F%A5%E9%81%93%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《环保的暴力》  柴知道解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%81%93%E5%BE%B7%E4%B8%8E%E5%B8%82%E5%9C%BA%E3%80%8B-%20%E8%8B%97%E7%82%9C%E5%B7%A5%E4%BD%9C%E5%AE%A4%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《道德与市场》  苗炜工作室解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%B5%B0%E5%90%91%E8%87%AA%E4%B8%BB%E5%88%9B%E6%96%B0%E3%80%8B-%20%E5%90%AC%E4%B9%A6%E5%9B%A2%E9%98%9F%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《走向自主创新》  听书团队解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%90%8E%E7%96%AB%E6%83%85%E6%97%B6%E4%BB%A3%EF%BC%9A%E5%A4%A7%E9%87%8D%E6%9E%84%E3%80%8B-%20%E5%BE%90%E5%AD%A6%E5%8B%A4%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《后疫情时代：大重构》  徐学勤解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%A6%82%E6%9E%9C%E4%BD%A0%E9%82%A3%E4%B9%88%E8%81%AA%E6%98%8E%E3%80%8B-%20%E5%88%98%E7%8E%84%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《如果你那么聪明》  刘玄解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%A2%84%E7%9F%A5%E7%A4%BE%E4%BC%9A%E3%80%8B-%20%E5%82%85%E6%B8%A5%E6%88%90%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《预知社会》  傅渥成解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E9%A3%8E%E9%9B%85%E4%B9%8B%E5%A5%BD%E3%80%8B-%20%E8%83%A1%E4%B8%80%E5%B3%B0%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《风雅之好》  胡一峰解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%80%BA%E5%8A%A1%E5%92%8C%E9%AD%94%E9%AC%BC%E3%80%8B-%20%E4%BC%9F%E8%90%8D%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《债务和魔鬼》  伟萍解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E7%8B%A1%E7%8C%BE%E7%9A%84%E6%83%85%E6%84%9F%E3%80%8B-%20%E9%9F%A9%E5%B7%8D%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《狡猾的情感》  韩巍解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E8%AE%AE%E4%BA%8B%E7%9A%84%E7%A7%91%E5%AD%A6%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《议事的科学》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%9C%A8%E9%A3%8E%E6%9A%B4%E4%B8%AD%E5%BF%83%E3%80%8B-%20%E6%9C%89%E5%AE%B9%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《在风暴中心》  有容解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%8B%93%E5%AE%BD%E7%BB%8F%E6%B5%8E%E6%80%9D%E7%BB%B4%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《拓宽经济思维》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E5%8A%A9%E6%8E%A8%EF%BC%9A%E5%BF%AB%E4%B8%8E%E6%85%A2%E3%80%8B-%20%E5%BE%90%E7%8E%B2%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《助推：快与慢》  徐玲解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%A3%E4%B9%8B%E8%B0%9C%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《中国出口之谜》  哈希解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%96%87%E6%98%8E%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B-%20%E9%92%B1%E8%A8%80%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《文明的逻辑》  钱言解读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6/%E3%80%8A%E5%86%B0%E8%BD%AE%E5%86%89%E5%8D%87%E3%80%8B-%20%E6%B8%B8%E8%AF%86%E7%8C%B7%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    自然科学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%93%B2%E5%AD%A6/%E3%80%8A%E6%B8%B8%E4%B8%96%E4%B8%8E%E8%87%AA%E7%84%B6%E7%94%9F%E6%B4%BB%EF%BC%9A%E5%BA%84%E5%AD%90%E8%AF%84%E4%BC%A0%E3%80%8B-%20%E9%99%88%E5%AD%90%E6%98%82%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    哲学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E9%87%91%E8%9E%8D%E5%AD%A6/%E3%80%8A%E9%92%B1%EF%BC%9A7%E6%AD%A5%E5%88%9B%E9%80%A0%E7%BB%88%E8%BA%AB%E6%94%B6%E5%85%A5%E3%80%8B-%20%E5%93%88%E5%B8%8C%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    金融学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95/%E3%80%8A%E5%BD%B1%E5%93%8D%E5%8A%9B%E3%80%8B2022%E7%89%88%20-%20%E5%90%AC%E4%B9%A6%E5%9B%A2%E9%98%9F%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    职业发展
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%B3%95%E5%BE%8B/%E3%80%8A%E5%88%A9%E7%BB%B4%E5%9D%A6%E3%80%8B-%20%E5%BC%A0%E7%AC%91%E5%AE%87%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    法律
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%96%87%E5%AD%A6/%E3%80%8A%E6%9A%97%E5%A4%84%E7%9A%84%E5%A5%B3%E5%84%BF%E3%80%8B-%20%E6%9D%A8%E4%BB%A5%E8%B5%9B%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    文学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E8%89%BA%E6%9C%AF/51.%20%E5%94%90%E5%85%8B%E6%89%AC%EF%BC%9A%E5%9B%AD%E6%9E%97%EF%BC%8C%E4%B8%AD%E5%9B%BD%E4%BA%BA%E7%9A%84%E8%AF%97%E6%84%8F%E6%A0%96%E5%B1%85/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    艺术
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E4%BA%92%E8%81%94%E7%BD%91/%E3%80%8AIDEO%EF%BC%8C%E8%AE%BE%E8%AE%A1%E6%94%B9%E5%8F%98%E4%B8%80%E5%88%87%E3%80%8B-%20%E5%90%AC%E4%B9%A6%E5%9B%A2%E9%98%9F%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    互联网
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E6%94%BF%E6%B2%BB%E5%AD%A6/%E3%80%8A%E6%94%BF%E6%B2%BB%E7%9A%84%E6%A6%82%E5%BF%B5%E3%80%8B%E4%B8%A8%E5%BC%A0%E7%AC%91%E5%AE%87%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    政治学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E7%A7%91%E6%8A%80/DeepSeek%E4%B9%8B%E5%90%8E%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A6%81%E4%BF%9D%E6%8A%A4%E4%BB%80%E4%B9%88%EF%BC%9F/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    科技
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E4%BA%BA%E7%B1%BB%E5%AD%A6/%E3%80%8A%E5%8D%B1%E9%99%A9%E5%85%B3%E7%B3%BB%E3%80%8B-%E8%8B%97%E7%82%9C%E5%B7%A5%E4%BD%9C%E5%AE%A4%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    人类学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E4%BC%A0%E6%92%AD%E5%AD%A6/%E3%80%8A%E5%BC%B1%E4%BC%A0%E6%92%AD%E3%80%8B-%20%E6%9D%8E%E5%8D%97%E5%8D%97%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    传播学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../%E5%81%A5%E5%BA%B7/%E3%80%8A%E7%99%8C%E7%97%87%E7%97%85%E4%BA%BA%E6%80%8E%E4%B9%88%E5%90%83%E3%80%8B-%20%E7%8E%8B%E5%85%B4%E8%A7%A3%E8%AF%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    健康
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      《混合信号》| 哈希解读
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="《混合信号》| 哈希解读">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      划重点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>《混合信号》  哈希解读</h1>
+
+<h2 id="_1">《混合信号》| 哈希解读</h2>
+<p><img  src="https://piccdn2.umiwi.com/uploader/image/ddarticle/2023120513/1827245822643827364/120513.jpeg" width="2139"/></p>
+<p>你好，欢迎每天听本书，我是哈希。今天为你解读的是《混合信号》，副标题叫“激励是如何发挥作用的？”。</p>
+<p>什么是“混合信号”呢？我们先来听一个故事。这是发生在这本书的作者，美国加州大学圣地亚哥分校的尤里·格尼茨教授身上的一件真事。</p>
+<p>作者有一个儿子，叫罗恩。这天，他带罗恩去迪士尼乐园。排队买票的时候，牌子上写着：“3岁以下：免费”。轮到他们付款的时候，售票员就问，孩子多大了，作者说：“差不多3岁。”但实际上，几个月之前，罗恩刚过了3岁生日。进了迪士尼之后，罗恩说：“爸爸，我不明白。你跟我说，坏人才说谎，但你刚刚就说谎了呀！”那么，罗恩从作者那里获得的，就是两个相互矛盾的信号。</p>
+<p>这就是混合信号，就是你说的是一套，但实际做的却是另一套。紧接着，等作者和罗恩到了下一处游乐设施时，门口的牌子上写着，“满4岁才能玩”，罗恩就说：“我刚满4岁！”很显然，在父亲的所言、所行中，罗恩已经做出了选择。</p>
+<p>而在很多组织中，其实也存在着类似的情况——说的跟做的不一样。“说的”，好理解，就是组织倡导的东西。而“做的”指什么呢？主要就是指组织激励的是什么，比如奖励什么、惩罚什么、考核什么。如果一个组织倡导的是一个维度，但实际上激励的是另一个维度，那发出的就是混合信号。比如，强调质量，却激励数量；鼓励团队合作，却激励的是个人成功；鼓励创新和冒险，却惩罚失败，等等。这些其实都是在释放混合信号。而这种混合信号，就会导致，你真的想倡导的那个东西，就失效了。</p>
+<p>在这本书里，作者就讲到了，怎么化解这些混合信号。还有，怎么更好地设计激励措施，让它发挥出更大效果，来帮助企业的发展，还有个人良好习惯的养成。</p>
+<p>下面我们先来看一些混合信号，还有它们分别该怎么化解。你可以边听边回想一下，自己身边有没有出现过类似的情况。</p>
+<p>首先我们来看第一种经常出现的混合信号：注重质量，却激励数量。</p>
+<p>先来听两个真实的故事。</p>
+<p>第一个故事，是一位经济学教授分享的。他说，他想让家里的小儿子学会上厕所，就跟5岁的女儿说，你每次帮弟弟上一次厕所，我就奖励你一颗糖。结果，女儿学会了耍花招。她是怎么做的？用她的话来说：“我发现，喝得多，上厕所就多，所以我不停地给弟弟喂水。”</p>
+<p>第二个故事，发生在中国。曾经，一批古生物学家到一个地方，招募当地农民到挖掘现场寻找化石。他们按上交的化石碎片来给奖励。结果，一些农民就砸碎了他们发现的骨化石，这样碎片就多，收入就多，但是却大大降低了文物的科学价值。</p>
+<p>我们会发现，这两个故事的共同点在于，他们实行激励的出发点是好的，但是却因为设置了单一的数量激励指标，结果就让事情变糟了。</p>
+<p>组织中也会存在类似的情况。比如，下面这些，都是作者曾经了解到的真实例子：一家玻璃厂，只按照生产玻璃的面积来算产量，结果工人造出的玻璃越来越薄，到后来几乎“一碰就碎”；还有，一个客服中心，只按客服接打电话的数量来发奖金，结果客服处理问题很敷衍，只想着赶紧挂电话接下一通；还有，一个网约车公司，只把司机的报酬跟接单量挂钩，结果是司机服务态度也差，车里卫生环境也差，用户很不满意。这些都是因为设置了只跟数量有关的激励指标，结果，却牺牲了质量。</p>
+<p>还有一个更极端的例子，发生在美国的富国银行。1997年，富国银行当时的首席执行官发起了一项活动，目标是让每位客户平均拥有8种银行产品。超额完成这个销售任务的员工就能获得加薪或晋升奖励。这看起来是一种直接有效的激励，但实际上，这个任务几乎不可能完成，为了保住饭碗，员工只能作弊。</p>
+<p>在很多年的时间里，一些富国银行员工每天的工作内容就是，早上来到办公室，喝点儿咖啡，打开计算机，然后……创建并管理一个个假账户！他们办假信用卡，开设没有经过授权的账户，在客户不知情的情况下发售他们不需要的保险产品。后来，2016年，事件被曝光时，假账户数量高达350万个，5300名员工因欺诈行为被解雇。而这些员工为什么要作弊？当然是因为，公司设置的激励措施，向他们发出的信号就是，销售数量大过天，其他都要往后靠。</p>
+<p>富国银行为此付出了惨痛的代价，声誉扫地，至今都没从打击中恢复过来。</p>
+<p>作者讲这些例子，是为了给我们发出一个提醒，就是，如果你注重质量，就绝对不要只激励数量。你在设置一个数量激励指标的时候，必须要考虑到它可能产生的副作用，然后增加一个辅助的激励维度，来确保质量。是的，这就是这类混合信号的解决方法，那就是，增加一个激励维度。比如，在刚才提到的银行里，引入内控审计机制，惩罚违规行为；在刚才提到的玻璃工厂里，引入一个质量检查机制，惩罚不合格产品。还有，我们现在很常见的，对于客服服务的打分评价，还有给网约车司机、快递员的匿名打星，都是一个辅助的激励维度。</p>
+<p>像这样，“增加一个激励维度”的思路，还可以用来化解另一种混合信号，那就是：注重团队合作，却激励个人成功。</p>
+<p>个人激励在组织中很常见，就是把奖金、报酬跟个人业绩挂钩。这么干当然能激励成员更努力工作。但是，如果这个组织也非常看重团队合作，有很多事是需要团队一起攻下山头的，那只激励个人成功就有很多副作用了。比如，可能会导致，在团队一起干一件事的时候，每个人都想自己多出风头，多抢业绩，就会出现内斗，拖累整个项目。还有，新成员刚进来，组织可能会派一个老成员，当他的导师，做“传帮带”，但如果这是一个只有个人激励的组织，那老成员很可能就不愿意用心指导新成员，因为又要费时间，又会给自己培养一个潜在的竞争对手，太不划算了。</p>
+<p>那么，该怎么解决这类问题呢？我们用一个足球队的例子来说明。</p>
+<p>想象一下，你是一支球队里的明星球员，此刻在赛场上，正在控球，快速逼近对方球门。迎面有两名防守队员，现在，你的大脑开始飞速旋转：我该自己射门呢，还是把球传给旁边的一名队友呢？</p>
+<p>好，到这里，我们把时间按下暂停键，来分析一下此刻的局势。你根据丰富的经验判断，如果自己射门，你的成功概率是40%；如果把球传给队友，你认为他有60%的进球概率。</p>
+<p>那么这个时候，你会怎么选？直接选概率大的那个选项吗？不一定。你此刻的选择，其实主要取决于两个选项的“期望回报”。</p>
+<p>“期望回报”，怎么计算？很简单。假设，你们球队，给个人进球的奖金是一万块——这可以看作是一个个人激励，给助攻别人进球的奖金是3000块——这可以看作是合作激励。那么，在这种情况下，你自己射门的期望回报，就是一万乘以成功概率40%——4000块；把球传给队友，你的期望回报就是3000乘以成功概率60%——1800块。那么此刻，你的理性选择就会是，自己射门。即使它的成功概率是更低的。</p>
+<p>但是，从团队的角度来看，你的这种想法显然会损害团队整体利益。那么问题的关键出在哪里呢？就在于合作激励相比于个人激励来说，太少了。所以一个能立刻起效的方法就是，降低个人进球的奖金，或者提高助攻进球的奖金。再或者，设置一个金额巨大的团队奖，就是如果球队取胜了，那么每个人都可以分到一笔足够丰厚的奖金。这样的话，球员们就会更注重合作。</p>
+<p>在其他组织中也是这样。如果是希望成员们在充分发挥个人努力的同时，还不会损伤团队合作，那么就不能忽视除了个人激励以外的另一个激励维度，那就是对团队合作的激励。除了设置集体奖金以外，还有一种方法是，可以针对特定的合作形式设置单独奖项，比如，最佳拍档奖、最佳导师奖。这样也能缓解我们在前面提到的，内斗，或者导师不积极的问题。</p>
+<p>下面我们再来看一组混合信号——注重创新，却惩罚失败。</p>
+<p>对很多公司来说，成功取决于创新。但是，创新就需要冒险，冒险就会伴随着失败。</p>
+<p>我们知道，托马斯·爱迪生为寻找适用于灯泡的灯丝，尝试了几千种不同的材料。在尝试了2000多种还不行之后，他的助手抱怨说：“我们所有的努力都白费了。”爱迪生却说：“我们学到了很多。我们已经知道有2000多种材料不适合做灯丝了。”后来，爱迪生说，他们是尝试了6000多种纤维，才最终找到了合适的。</p>
+<p>我们看到，爱迪生对待失败的态度是，认为失败也是有意义的，是值得的。在《天才的起源》那本书里，作者西蒙顿也给出证据表明，最有创造力的天才失败次数是最多的，也就是说，他们并不比普通人更容易成功，他们只是做了更多尝试。同样的，最有创造力的公司失败率也并不低，只是与竞争对手相比，他们失败更快、成本更低，所以从挫折中吸取的教训也更多。</p>
+<p>但是，现在很多公司的做法是，一方面鼓励员工创新，另一方面，却在员工尝试创新或者推进新项目失败的时候惩罚他们，轻的可能是口头批评，重一点可能是影响绩效，推迟晋升，甚至劝退开除。所以，这就形成了一种混合信号。在实际中导致的结果就是，员工们不敢尝试新想法，不敢扛新项目，更不能从失败中学习。</p>
+<p>想要解决这种混合信号，关键就在于，要把企业内部发生的失败事件进行分类。如果是因为恶意、疏忽或能力不行导致的失败，那么自然要有所惩罚；而如果是检验新想法和新方向导致的失败，那么就应该给予更多的包容，甚至鼓励。比如，作者讲到，印度巨头塔塔集团的董事长，在退休前为最有价值的失败创新设立了“勇于尝试”奖，说“失败是一座金矿”。他传递的信号就是，在追求创新的过程中，无论成败，都应得到鼓励。作者非常同意组织心理学家鲍勃·萨顿说过的一句话：公司不应惩罚失败，而应惩罚不作为。</p>
+<p>另外，书中还提到一个建议，那就是，公司应该鼓励“快速失败”。因为失败越快，就意味着止损越早，损失越小，经验迭代也越快。不过，“快速失败”，或者说“快速承认失败”这件事是违背人们的天性的。因为人们一旦承诺要做一件什么事了，他自然就希望能把这个事情做成，不愿意看到自己失败。所以即使败局已经浮现，他也会想着，我再多投入一点，我再多努力一点，说不定就扭转乾坤了。这也跟行为经济学里面讲的那个，人们的“损失厌恶”心理有关，就像很多人拿着亏损的股票，总是不愿意卖掉，想着我再多拿一会儿会不会就赚回来了？结果却经常是被越套越深。那么如果在一家公司里，员工总是执意想要挽救那些希望渺茫的项目，往里面不断砸资源，那对于公司来说，就会造成很大的无谓损失。即使是再鼓励创新、鼓励失败的公司，也禁不起这么消耗。</p>
+<p>所以，书中建议说，如果想要孕育出良好的、有利于创新的公司文化，不仅要包容冒险、减少人们对于创新失败的恐惧，还应该鼓励“快速失败”。现实中，也确实有不少企业正在这样做。比如，谷歌的母公司Alphabet，他们在鼓励团队开发创意的同时，也鼓励他们，一旦出现失败的证据，就去推翻自己的创意。而推翻之后，公司还会为他们庆祝，也经常有人因为“及时止损”而升职加薪。小到两个人的团队，大到30人的团队，只要及时终止失败，每个人就会获得奖励。</p>
+<p>还有，医药科技公司默克，他们的一位研发主管给公司引入了“项目终止费”。因为这位主管刚上任就注意到，有些医药研发者，为了逃避失败，会在一个思路上一意孤行，不断试验。所以，这位主管就决定，向及时终止失败项目、转向新创意的研发者发放奖金。结果，公司里创意迭代的速度果然大大加快了。</p>
+<p>好，刚才我们讲了一些在组织中常见的混合信号。你会发现，想要化解混合信号，其实从根本上来说，就是要设立恰当的激励。首先想明白，你真正想要在组织里实现的是什么，然后“对症下药”，去针对它设置激励；还有，要确保，你所激励的其他指标，不会损伤那个你真正在意的东西。</p>
+<p>不过，对于很多管理者来说，还有一个更头疼的问题在于，怎么设置有效的激励。因为他们发现，很多奖励措施、惩罚措施，实施了却没有多大效果。</p>
+<p>针对这个问题，这本书基于行为经济学中的经典理论，还有作者这些年的大量实践，给出了一些“激励催化剂”，帮助人们把激励变得更加有效。</p>
+<p>首先这个“激励催化剂”叫“心理账户”。它是什么意思？我们用一个简单的例子来说明。</p>
+<p>假设，你去实体店买一个200块的按摩仪，店员告诉你，同样的按摩仪，在20分钟车程外的分店里在做促销，只要150块。你会为了省钱，开车去那儿买吗？多数人会选择去，因为折扣力度看起来很大。但是假如，你要买一台5000块的电脑，店员跟你说，20分钟车程外的分店里，同样的电脑卖4950块，你会开车去买吗？多数人就不愿意再跑一趟了。因为这个优惠力度看起来就比较轻微了，感觉不值得。</p>
+<p>但是，优惠的都是50块钱呀，这个绝对数量并没有变。那么，变的是什么呢？变的是这50块在你心理账户中的位置。行为经济学告诉我们，人类大脑包含多个心理账户，比如住房账户、餐饮费账户、娱乐账户、教育账户，甚至会有更细分的游戏机账户、护肤品账户、加油费账户，等等；每个账户在我们的潜意识里其实都有独立的预算，有的大，有的小；我们每一笔支出的费用，都会被我们划分到不同的心理账户——比如你买按摩仪跟买电脑的钱，就分属于两个不同的心理账户；而同样数额的钱，在不同的心理账户里，地位是不一样的。</p>
+<p>所以，作者根据这个原理，设计了一种激励改进思路，那就是，不要泛泛地去做激励，而是把激励目标锁定在满足需求的特定心理账户上。</p>
+<p>什么意思呢？我们举一些作者实践过的例子。比如，有一家新加坡的出租车公司，员工都是司机，每天要久坐，缺乏运动，患慢性病的风险很高。所以这家公司就想激励司机们多运动。他们愿意给运动量达标的司机每月奖励100美元。作者给这个方案提出了一个改进意见，就是不要直接奖励100美元，而是聚焦在更具体的心理账户上，比如去抵扣一些司机们讨厌的费用。他们发现，出租车司机开公司的车，每天要向公司支付约100美元的租金，而司机们都挺讨厌交租金这个环节的，感觉每天从兜里掏出100块很难受。所以，作者就建议，奖励运动达标的那100块，就用来免除一天的租金。</p>
+<p>后来，为了测试激励效果，他们把司机分为两组，一组直接发钱，另一组抵扣租金。然后监测司机每天走路的步数。一个月后发现，抵扣租金那一组的司机，走路步数达标的人数更多，平均走的步数更多。然后，他们又继续设置了四个月的运动奖励，之后停掉了。结果发现，即使在停掉奖励之后，抵扣租金那一组的司机，每天的运动量依然更多。这些都显示出，针对特定心理账户的激励思路是更有效的。</p>
+<p>这种激励思路还可以用在营销推广中。比如，有一个卖车的网站，决定给每一个通过这个网站买车的人，减免450美元的购车费用，来提升销量。但是，提升效果很小。作者就帮他们改进了一下方案。建议他们，把这450美元变成随车附送的加油卡，车主去加油的时候就可以从这个卡里扣款。结果，对销量的提升效果就明显多了。因为，450美元，放在买车这个心理账户里，跟几万美元的购车款相比，太小了。但是，如果放在加油的心理账户里，就是一笔挺大的数字，能加好几回油。甚至，他们后来还发现，即使是让加油卡的金额再少一些，比如变成250美元，激励效果都会好过450美元的车费减免。</p>
+<p>另外，书里还讲到，有一家房产中介公司，在卖出一套房之后会给买家几千块钱的返款。但是，却没有产生多少激励效果。作者的一个同事就在这家中介买过房。同事回忆说，好像是有返佣金，但是具体多少已经不记得了，因为跟房价相比，几千块就太少了，而且她当时还得忙着签一堆贷款相关的文件，返佣金的合同就埋没在里面了。很多人跟作者同事的情况都是类似的。所以后来，作者就帮这家公司改进了一下方案，改成抵扣几千块的新房装修费用。比如，客户入住几个月内，在当地家居店消费，能收到大量的退款，能用极少的钱买到好多家具。这样改进之后，购房人都对这种返利规则非常喜欢，给这家公司带来了不少新客户。</p>
+<p>所以，作者感慨说，有的时候，人们实施了一项激励措施，发现作用不大，就得出错误的结论，觉得激励不起作用。但是，从这些例子中我们可以发现，很多时候，不是激励没用，而是激励的姿势不对，简单的姿势调整，很可能就会显著提高效果。在激励问题上，我们不应该只关注要不要激励、激励什么，更应该考虑怎么激励才能让效率最大化。</p>
+<p>刚才我们说的“激励催化剂”叫心理账户，下面再来说一个——损失厌恶。这也是行为经济学中的一个很有名的理论。简单来说就是，损失的痛苦大于收益的快乐。拿走你两百块的痛苦，会强过给你两百块的快乐。</p>
+<p>而这个原理，如果用在改进激励上，会产生立竿见影的效果。</p>
+<p>研究人员曾经做过这么一项实验。他们来到美国芝加哥的一所高中，跟这里的老师们说，如果他们负责班级的学生的期末考试成绩提升了，就给他们发8000美元的奖励。不过，奖励方案有两种。对于第一组老师，他们是在学期末检验完结果之后再发钱；而第二组老师，是学期初就会收到8000美元，等学期结束之后，如果学生成绩没提升，就要把钱还回去。实验的结果是，第二组要还钱的老师工作得更加卖力，学生成绩提升得明显更多。显然，相比于争取还没到手的东西，人们会花更多的努力去保住已经拥有的东西。所以，在一般情况下，如果以损失而不是收益来设计激励，同样的奖金会发挥更大的作用。</p>
+<p>作者还在一家中国公司做过实验。这家公司打算在每一周里，给超额完成产量任务的团队，每个成员发80块的奖金。在作者建议下，他们把工人分成了两组，一个是收益组，在每周结束之后才有可能拿到奖励；另一个是损失组，他们会在每周一就拿到80块，但是如果那一周产量没达标，奖金就会从工资里被扣掉。结果是，损失组的生产力提升明显高于收益组。</p>
+<p>所以，作者建议说，只要在你能控制的情况下，那么就尽量给你要激励的对象构建一个关于损失的故事，也就是说，先给予他们，然后让他们知道，未来有可能会失去。这样的叙事，会比单纯的“努力就可能获奖”这类叙事，要有效得多。</p>
+<p>再来看另一个“激励催化剂”——后悔厌恶。意思就是，人们在做决定的时候，会尽量避免将来后悔。</p>
+<p>比如，作者讲到，他的祖父生前每周都会买一张相同号码的彩票。这个习惯一直保持了几十年，直到去世。为什么呢？正是因为不想后悔。祖父害怕，如果他哪一周没买，而正好是那一周，那串数字成了中奖号码，那对他会是毁灭性的打击，他的余生可能都会后悔这件事。在这样可怕的后悔面前，每周买彩票的钱根本不值一提。而他祖父的这种心态，也是很多买彩票的人的心态。</p>
+<p>而在激励场景中，这种厌恶后悔的心态，也能发挥很大的作用。几年前，作者拜访过比尔·盖茨和他前妻梅琳达的基金会。当时，这个基金会想鼓励员工少开车来上班，所以他们制定了一项激励措施：每天，那些不开车上班的员工，都能拿到3美元奖励。</p>
+<p>基金会统计发现，他们每天都要在“不开车奖励”这上面花出去1500美元，成本还是不低的，但是激励效果还不够好。所以基金会就咨询作者，看看能不能设计一个更有效的方案。让这每天的1500美元支出能发挥出更大的激励作用。作者就提出了一种基于“后悔厌恶”的改进方案：每天下午搞一个1500美元的抽奖活动。在员工系统里随机抽一个名字，名字公布后，系统会核查该员工当天有没有开车来上班。如果没有，他就是获奖者。如果他是开车来的，那就播放悲伤的音乐，接着抽取下一个名字。这样一来，那些错失机会的人就会非常后悔。而为了避免这种后悔，人们就会更多地不开车上班。</p>
+<p>不过，有意思的是，当时盖茨基金会听了这个方案，担心员工们不高兴，犹豫着不敢采纳。而另一家大公司听说了这个方案，很感兴趣，主动让作者到他们公司来试验。作者就把这个公司的人分成四组，第一组不给激励；第二组如果当天不开车就给5美元；第三组，是每周五设立一个抽奖活动，员工可以把手里那些本周没使用的停车票写上自己的名字，放进盒子里。公司会从盒子里抽出一张，奖励这个人500美元。</p>
+<p>再说第四组，这组用的就是前面提到的，加入了后悔情绪的抽奖组。这个抽奖所有人都可以参加，但是，如果抽出来的这张停车票，上面标着“已使用”，那这个人的获奖资格就作废，接着抽下一个。</p>
+<p>实验的结果是，在有激励的这三组里面，直接给五美元奖励的那组，成本最高，但是效果最差，停车量相比于没有激励的组只减少了10%。抽奖组的效果要更好一些，停车量减少了18%，成本也更低。而加入后悔情绪的抽奖组效果最好，减少了26%的停车数量。也就是说，借助人们的后悔厌恶心态，能用更少的成本，实现更大的激励效果。</p>
+<p>好，以上，就是今天解读的主体内容了。最后，还有一点儿彩蛋。</p>
+<p>今天我们主要讲了，怎么化解组织中的一些常见的混合信号，还有，怎么设计出更有效的激励措施。在讲述中，我们主要聚焦的是，组织或者管理者可以怎么做。不过其实，刚才我们讲到的那些关于激励的建议，同样也可以用在个人身上。比如最典型的，就是用激励来帮助自己养成良好习惯。</p>
+<p>关于习惯养成，我个人很推荐一本经典的书——《福格行为模型》。我们听书也为你解读过。在那本书里，福格其实已经把养成习惯需要的要素讲得很全面了；而今天这本书，我觉得可以作为那本书的一个有益补充。福格曾经说，行为设计的本质，就是情绪设计。而怎么塑造情绪？激励很重要。福格说，即使是一个简单的庆祝，也能让你感受到激励。比如，在做完10个俯卧撑之后，就立刻对自己说一句“我可真棒”，这也能给大脑传递激励信号。</p>
+<p>而今天这本书，又在激励这个话题上做了更深的讨论。比如，有些人会觉得，我如果一开始就给自己设置奖励，会不会产生依赖？奖励一停，会不会习惯也停了？而从这本书可以看出，并不会。像我们前面提到的，激励司机多运动，激励员工少开车这些例子，其实书里也都讲到了，奖励持续了三四个月之后，即使停掉了，人们也依然在很大程度上保持住了好习惯。</p>
+<p>还有，除了奖励自己，我们还可以用损失厌恶来激励自己。比如，现在人们经常喜欢加入“早起群”“早睡群”“读书群”“健身群”，每天打卡，相互监督，没做到的人就发红包。这种方法之所以有效，从根本上其实就是利用了“损失厌恶”还有“承诺约束”这两个典型的行为经济学原理。如果你找不到这样的群，其实找一个你信任的朋友，作为“读书搭子”“健身搭子”，也能起到类似的效果。你还可以向他承诺，比如每天要做30个俯卧撑，或者每天要读半小时书，如果做不到，就给他发红包。我自己呢，曾经就使用过这个方法，来督促自己早睡。效果很喜人——在整个承诺期里，朋友只从我这里薅到过一次红包。</p>
+<p>另外，这本书里还讲到一个被哈佛大学等高校的学者研究验证过的妙招，叫“诱惑捆绑”。就是把自己喜欢的事跟讨厌的事捆绑起来。比如作者自己，多年来，他只允许自己在椭圆机上锻炼时才能看最喜欢的电视节目。这样有两个好处，一是缓解了不想做的事的痛苦，增强了锻炼的欲望；第二，把有点放纵的行为跟有益行为搭配在一起，也减少了放纵的内疚感。而我们也可以借鉴这种思路。比如，规定，刚起床的时候可以听自己最喜欢的播客节目，只有做家务时才能听有声小说，只有吃健康餐的时候才能看某个喜欢的综艺，只有跑步的时候才能听自己最爱的一个歌单，等等。</p>
+<p>好，如果你想了解更多关于激励的有趣知识，也很推荐你翻开听书文稿末尾的电子书，进行拓展阅读。其中，关于个人习惯养成的内容，在第五部分。</p>
+<p>那么今天这本书，我们就聊到这里。恭喜你，又听完了一本书！欸，这句话，其实也是一个小小的即时激励呢。好了，那我们明天继续一起听书吧！</p>
+<h3 id="_2">划重点</h3>
+<ol>
+<li>
+<p>如果你注重质量，就绝对不要只激励数量。你在设置一个数量激励指标的时候，必须要考虑到它可能产生的副作用，然后增加一个辅助的激励维度，来确保质量。</p>
+</li>
+<li>
+<p>如果是希望成员们在充分发挥个人努力的同时，还不会损伤团队合作，那么就不能忽视除了个人激励以外的另一个激励维度，那就是对团队合作的激励。</p>
+</li>
+<li>
+<p>如果想要孕育出良好的、有利于创新的公司文化，不仅要包容冒险、减少人们对于创新失败的恐惧，还应该鼓励“快速失败”。</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../%E7%A4%BE%E4%BC%9A%E5%AD%A6/%E3%80%8A%E8%8B%B1%E9%9B%84%E5%8F%98%E6%A0%BC%E3%80%8B-%20%E5%88%98%E7%8E%84%E8%A7%A3%E8%AF%BB/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 《英雄变格》  刘玄解读">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                《英雄变格》  刘玄解读
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E3%80%8A%E6%97%B6%E9%97%B4%E5%9B%B0%E5%A2%83%E3%80%8B-%20%E6%9C%B1%E6%AD%A5%E5%86%B2%E8%A7%A3%E8%AF%BB/" class="md-footer__link md-footer__link--next" aria-label="Next: 《时间困境》  朱步冲解读">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                《时间困境》  朱步冲解读
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024-Present zkep
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "toc.follow", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.footer", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
