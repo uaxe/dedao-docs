@@ -7,6 +7,7 @@
 ###  markdown 在线文档
 
  * [github](https://uaxe.github.io/dedao-docs/)
+ * [netlify](https://dedao.netlify.app/)
 
 ### 本地部署
 
