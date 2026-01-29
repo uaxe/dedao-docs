@@ -1,5 +1,15 @@
 ## 得到听书文档
 
+## clone问题
+`error: invalid path 'docs/历史/《<山海经>的世界》- 裴鹏程解读.md'`
+进入该目录：cd D:\GitHub\dedao-docs  
+
+开启转义支持并强制恢复：
+``` bash
+git config core.protectNTFS false
+git checkout -f HEAD
+```
+
 得到听书 markdown 文档
 
 ----
